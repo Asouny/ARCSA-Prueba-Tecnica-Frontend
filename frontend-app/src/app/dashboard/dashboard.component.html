@@ -13,7 +13,18 @@
     </div>
 
     <mat-card-content>
-      <table mat-table [dataSource]="tareas" class="mat-elevation-z8 full-width-table">
+
+      <mat-form-field appearance="fill" class="filter-select">
+        <mat-label>Filtrar por estatus</mat-label>
+        <mat-select [(value)]="filtroEstatus" (selectionChange)="aplicarFiltro()">
+          <mat-option value="">Todas</mat-option>
+          <mat-option value="pendiente">Pendiente</mat-option>
+          <mat-option value="completado">Completado</mat-option>
+        </mat-select>
+      </mat-form-field>
+
+
+      <table mat-table [dataSource]="tareasFiltradas" class="mat-elevation-z8 full-width-table">
 
         <ng-container matColumnDef="id">
           <th mat-header-cell *matHeaderCellDef> ID </th>

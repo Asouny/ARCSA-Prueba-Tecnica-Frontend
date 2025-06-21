@@ -12,6 +12,8 @@ import { DialogEditTaskComponent } from './dialog-edit-task/dialog-edit-task.com
 })
 export class DashboardComponent implements OnInit {
   tareas: any[] = [];
+  tareasFiltradas: any[] = [];
+  filtroEstatus: string = '';
   displayedColumns: string[] = [
     'id',
     'titulo',
@@ -33,6 +35,7 @@ export class DashboardComponent implements OnInit {
     this.dashboardService.getTareas().subscribe({
       next: (res: any) => {
         this.tareas = res;
+        this.aplicarFiltro();
       },
       error: (err: any) => {
         console.error(err);
@@ -84,5 +87,15 @@ export class DashboardComponent implements OnInit {
         this.obtenerTareas();
       }
     });
+  }
+
+  aplicarFiltro() {
+    if (this.filtroEstatus) {
+      this.tareasFiltradas = this.tareas.filter(
+        (t) => t.estatus === this.filtroEstatus
+      );
+    } else {
+      this.tareasFiltradas = this.tareas;
+    }
   }
 }

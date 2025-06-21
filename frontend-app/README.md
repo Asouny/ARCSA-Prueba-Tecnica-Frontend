@@ -1,27 +1,36 @@
-# FrontendApp
+# Gestión de Tareas - Frontend Angular
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 16.2.1.
+Esta aplicación es el **frontend** de un sistema de gestión de tareas desarrollado en **Angular 16** + **Angular Material**. Permite a los usuarios:
 
-## Development server
+✅ Registrarse  
+✅ Iniciar sesión (autenticación con JWT)  
+✅ Crear, editar y eliminar tareas  
+✅ Filtrar tareas por estatus (pendiente / completado)  
+✅ Cerrar sesión  
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+> El backend está desarrollado en Node.js + Express + MySQL y debe estar en funcionamiento para que esta app se conecte correctamente.
 
-## Code scaffolding
+---
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+## Tecnologías
 
-## Build
+- Angular 16
+- Angular Material
+- TypeScript
+- RxJS
+- SCSS
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+---
 
-## Running unit tests
+## Instalación
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+1)  Instala las dependencias:
+npm install
 
-## Running end-to-end tests
+2) Ejecución
+ng serve
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
 
-## Further help
+NOTA: 
+El frontend espera que el back este corriendo en http://localhost:3000
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
