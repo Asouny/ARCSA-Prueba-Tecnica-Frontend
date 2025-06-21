@@ -1,14 +1,38 @@
-mat-card {
-  max-width: 400px;
-  margin: 50px auto;
-  padding: 20px;
+.register-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #212121;
+  padding: 16px;
 
-  .full-width {
+  mat-card {
+    max-width: 400px;
     width: 100%;
-  }
+    padding: 1rem;
+    background: #303030;
+    color: #fff; 
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
 
-  button {
-    margin-top: 10px;
-    width: 100%;
+    mat-card-title {
+      text-align: center;
+      font-size: 1.8em;
+    }
+
+    .full-width {
+      width: 100%;
+    }
+
+    .button-group {
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 8px;
+      margin-top: 1rem;
+
+      button {
+        flex: 1;
+      }
+    }
   }
 }

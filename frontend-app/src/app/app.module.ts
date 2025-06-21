@@ -19,6 +19,9 @@ import { MatDialogModule } from '@angular/material/dialog';
 import { MatSelectModule } from '@angular/material/select';
 import { DialogEditTaskComponent } from './dashboard/dialog-edit-task/dialog-edit-task.component';
 
+import { MatIconModule } from '@angular/material/icon';
+import { MatChipsModule } from '@angular/material/chips';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -36,6 +39,8 @@ import { DialogEditTaskComponent } from './dashboard/dialog-edit-task/dialog-edi
     MatFormFieldModule,
     MatInputModule,
     MatButtonModule,
+    MatIconModule,
+    MatChipsModule,
     HttpClientModule,
     MatTableModule,
     MatSelectModule,

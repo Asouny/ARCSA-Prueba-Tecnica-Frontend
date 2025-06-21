@@ -1,0 +1,25 @@
+.login-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; 
+  background-color: #212121; 
+}
+
+.login-card {
+  width: 100%;
+  max-width: 400px;
+  padding: 1rem;
+  background: #303030; 
+  color: #fff;
+}
+
+.full-width {
+  width: 100%;
+}
+
+.button-group {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 1rem;
+}

@@ -2,12 +2,16 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100vh; // que ocupe pantalla completa
+  height: 100vh; 
+  background-color: #212121; 
   padding: 16px;
 
   mat-card {
     max-width: 400px;
     width: 100%;
+    background: #303030; 
+    color: #fff; 
+    padding: 1rem;
 
     mat-card-title {
       font-size: 1.8em;

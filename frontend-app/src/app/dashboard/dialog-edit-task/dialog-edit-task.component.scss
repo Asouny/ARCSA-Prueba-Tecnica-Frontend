@@ -1,0 +1,36 @@
+mat-dialog-content {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  padding-top: 8px;
+  background-color: #303030; 
+  color: #fff; 
+}
+
+.full-width {
+  width: 100%;
+}
+
+mat-form-field {
+  background: rgba(255, 255, 255, 0.05); 
+  border-radius: 4px;
+}
+
+mat-dialog-title {
+  text-align: center;
+  font-weight: bold;
+  font-size: 1.6em;
+  color: #bb86fc;
+
+  margin-bottom: 8px;
+}
+
+mat-dialog-actions {
+  padding: 8px 0;
+  background-color: #2c2c2c;
+  border-top: 1px solid rgba(255,255,255,0.1);
+  
+  button {
+    min-width: 100px;
+  }
+}

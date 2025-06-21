@@ -27,16 +27,12 @@ export class DashboardService {
   }
 
   createTarea(data: any) {
-    return this.http.post(
-      'http://localhost:3000/tasks',
-      data,
-      this.getAuthHeaders()
-    );
+    return this.http.post(`${this.apiUrl}`, data, this.getAuthHeaders());
   }
 
   updateTarea(id: number, data: any) {
     return this.http.put(
-      `http://localhost:3000/tasks/${id}`,
+      `${this.apiUrl}/${id}`,
       data,
       this.getAuthHeaders()
     );

@@ -1,0 +1,48 @@
+.dashboard-container {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  min-height: 100vh;
+  padding: 24px;
+  background-color: #212121; // Fondo oscuro
+
+  mat-card {
+    width: 100%;
+    max-width: 1000px;
+    background: #303030;
+    color: #fff;
+    padding: 16px;
+
+    mat-card-title, mat-card-subtitle {
+      text-align: center;
+    }
+
+    .header-actions {
+      display: flex;
+      justify-content: flex-end;
+      margin-bottom: 16px;
+    }
+
+    .full-width-table {
+      width: 100%;
+
+      th {
+        color: #bdbdbd;
+      }
+
+      td {
+        color: #e0e0e0;
+      }
+
+      mat-chip {
+        font-weight: bold;
+      }
+    }
+
+    mat-card-actions {
+      margin-top: 16px;
+      display: flex;
+      justify-content: flex-end;
+    }
+  }
+}
